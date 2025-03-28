@@ -146,7 +146,7 @@ async def start_command(client: Client, message: Message):
 
         if FILE_AUTO_DELETE > 0:
             notification_msg = await message.reply(
-                f"<b>This file will be deleted in {get_exp_time(FILE_AUTO_DELETE)}. Please save or forward it to your saved messages before it gets deleted.</b>"
+                f"<b>❗️❗️❗️IMPORTANT❗️❗️❗️\nCe message sera supprimé dans {get_exp_time(FILE_AUTO_DELETE)}. 🫥 (Cause de droit d'auteur ).\nVeuillez la transférez pour ne pas la perdre.</b>"
             )
 
             await asyncio.sleep(FILE_AUTO_DELETE)
@@ -165,11 +165,11 @@ async def start_command(client: Client, message: Message):
                     else None
                 )
                 keyboard = InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ!", url=reload_url)]]
+                    [[InlineKeyboardButton("Récupérer à Nouveau!", url=reload_url)]]
                 ) if reload_url else None
 
                 await notification_msg.edit(
-                    "<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",
+                    "<b>✅ ✅ Votre message a été supprimer cliquer sur le bouton pour le retrouver 👇</b>",
                     reply_markup=keyboard
                 )
             except Exception as e:
@@ -177,11 +177,11 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                    [InlineKeyboardButton("• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs •", url="https://t.me/Nova_Flix/50")],
+                    [InlineKeyboardButton("• 𝕂𝔾ℂ 𝔸ℕ𝕀𝕄𝔼 •", url="https://t.me/KGCAnime")],
 
     [
-                    InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data = "about"),
-                    InlineKeyboardButton('ʜᴇʟᴘ •', callback_data = "help")
+                    InlineKeyboardButton("• A propos", callback_data = "about"),
+                    InlineKeyboardButton('Aide •', callback_data = "help")
 
     ]
             ]
@@ -220,7 +220,7 @@ async def not_joined(client: Client, message: Message):
     # Check if only the first channel is set
     elif FORCE_SUB_CHANNEL1:
         buttons.append([
-            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ•", url=client.invitelink1)
+            InlineKeyboardButton(text="• Rejoindre Mon canal•", url=client.invitelink1)
         ])
     # Check if only the second channel is set
     elif FORCE_SUB_CHANNEL2:
@@ -249,7 +249,7 @@ async def not_joined(client: Client, message: Message):
     try:
         buttons.append([
             InlineKeyboardButton(
-                text="ʀᴇʟᴏᴀᴅ",
+                text="Récupérer",
                 url=f"https://t.me/{client.username}?start={message.command[1]}"
             )
         ])
