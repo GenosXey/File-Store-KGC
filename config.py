@@ -62,12 +62,12 @@ IS_VERIFY = os.environ.get("IS_VERIFY", "False")
 TUT_VID = os.environ.get("TUT_VID","https://t.me/hwdownload/3")
 
 
-HELP_TXT = "<b><blockquote>Toi aussi tu veux un bot pareil que moi ??\n\nContact juste mon créateur : @Kingcey</blockquote></b>"
+HELP_TXT = "<b>Toi aussi tu veux un bot pareil que moi ??\n\nContact juste mon créateur : @Kingcey</b>"
 
 ABOUT_TXT = "<b><blockquote>◈ Créateur: <a href=https://t.me/botzflix>Kingcey</a>\n◈ AUTH: <a href=https://t.me/BotZFlix>ᴏᴛᴀᴋᴜғʟɪx</a>\n◈ Chaîne de Film & série : <a href=https://t.me/ZFlixTeam>ZFlix-Team</a>\n◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/Kingcey>Kingcey</a></blockquote></b>"
 
 
-START_MSG = os.environ.get("START_MESSAGE", "<b>Yo {first}\n\n<blockquote> 𝚃'𝚊𝚍𝚘𝚛𝚎 𝚕𝚎𝚜 𝚊𝚗𝚒𝚖𝚎𝚜 ? ! 𝙹𝚎 𝚜𝚞𝚒𝚜 𝚕à 𝚙𝚘𝚞𝚛 𝚝'𝚊𝚒𝚍𝚎𝚛 à 𝚝𝚛𝚘𝚞𝚟𝚎𝚛 𝚌𝚎 𝚚𝚞𝚎 𝚝𝚞 𝚌𝚑𝚎𝚛𝚌𝚑𝚎𝚜.\n\n𝚅é𝚛𝚒𝚏𝚒𝚎 𝚖𝚊 𝚌𝚑𝚊î𝚗𝚎 𝚌𝚒-𝚍𝚎𝚜𝚜𝚘𝚞𝚜 𝚙𝚘𝚞𝚛 𝚎𝚗 𝚜𝚊𝚟𝚘𝚒𝚛 𝚙𝚕𝚞𝚜 !👇\n\n 𝙲𝚛éé 𝚙𝚊𝚛 <a href=https://t.me/KGCanime>◡̈⃝ㅤ🇰ιηg¢єу</a></blockquote></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Yo {first}\n\n 𝚃'𝚊𝚍𝚘𝚛𝚎 𝚕𝚎𝚜 𝚊𝚗𝚒𝚖𝚎𝚜 ? ! 𝙹𝚎 𝚜𝚞𝚒𝚜 𝚕à 𝚙𝚘𝚞𝚛 𝚝'𝚊𝚒𝚍𝚎𝚛 à 𝚝𝚛𝚘𝚞𝚟𝚎𝚛 𝚌𝚎 𝚚𝚞𝚎 𝚝𝚞 𝚌𝚑𝚎𝚛𝚌𝚑𝚎𝚜.\n\n𝚅é𝚛𝚒𝚏𝚒𝚎 𝚖𝚊 𝚌𝚑𝚊î𝚗𝚎 𝚌𝚒-𝚍𝚎𝚜𝚜𝚘𝚞𝚜 𝚙𝚘𝚞𝚛 𝚎𝚗 𝚜𝚊𝚟𝚘𝚒𝚛 𝚙𝚕𝚞𝚜 !👇\n\n 𝙲𝚛éé 𝚙𝚊𝚛 <a href=https://t.me/KGCanime>◡̈⃝ㅤ🇰ιηg¢єy</b>")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "5115691197 6273945163 7428552084 5231212075 7328629001").split()):
@@ -79,7 +79,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Genjutsu {first}\n\n<b>Pour recevoir le fichier de l'animé, Tu dois d'abord rejoindre mon canal puis cliquer sur récupérer</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<blockquote>• {filename}\nBY : @KGCAnime</blockquote>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• {filename}\n\nBY : @KGCAnime</b>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
