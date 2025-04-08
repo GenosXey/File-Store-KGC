@@ -113,7 +113,7 @@ async def start_command(client: Client, message: Message):
                 print(f"Error decoding ID: {e}")
                 return
 
-        temp_msg = await message.reply("Please wait...")
+        temp_msg = await message.reply("Veuillez patientez...")
         try:
             messages = await get_messages(client, ids)
         except Exception as e:
@@ -177,7 +177,7 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                    [InlineKeyboardButton("• 𝕂𝔾ℂ 𝔸ℕ𝕀𝕄𝔼 •", url="https://t.me/KGCAnime")],
+                    [InlineKeyboardButton("• Tᴏᴋʏᴏ Sᴛʀᴇᴀᴍ •", url="https://t.me/Tokyo_Streame")],
 
     [
                     InlineKeyboardButton("• A propos", callback_data = "about"),
@@ -220,12 +220,12 @@ async def not_joined(client: Client, message: Message):
     # Check if only the first channel is set
     elif FORCE_SUB_CHANNEL1:
         buttons.append([
-            InlineKeyboardButton(text="• Rejoindre Mon canal•", url=client.invitelink1)
+            InlineKeyboardButton(text="• Rejoindre Mon canal •", url=client.invitelink1)
         ])
     # Check if only the second channel is set
     elif FORCE_SUB_CHANNEL2:
         buttons.append([
-            InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ•", url=client.invitelink2)
+            InlineKeyboardButton(text="• Rejoindre Mon canal •", url=client.invitelink2)
         ])
 
     # Check if the third and fourth channels are set
