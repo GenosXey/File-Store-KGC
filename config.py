@@ -19,37 +19,37 @@ from logging.handlers import RotatingFileHandler
 #rohit_1888 on Tg
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7825834510:AAF1_6o8ExPVs6KEosEY5yw4fSMtd-hCKGo")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8179033494:AAH3ApNEO6pZsjkrOkxMbRrhPAy0estSTgg")
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "24817837"))
 #Your API Hash from my.telegram.org
 API_HASH = os.environ.get("API_HASH", "acd9f0cc6beb08ce59383cf250052686")
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002491166640"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002265513823"))
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "kingcey")
+OWNER = os.environ.get("OWNER", "Sankare87")
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7428552084"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1682759613"))
 #Port
 PORT = os.environ.get("PORT", "8080")
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://altof2:123Bonjoure@cluster0.s1suq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Ethan:Ethan123@telegrambots.lva9j.mongodb.net/?retryWrites=true&w=majority&appName=TELEGRAMBOTS")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #Time in seconds for message delete, put 0 to never delete
-TIME = int(os.environ.get("TIME", "1200"))
+TIME = int(os.environ.get("TIME", "0"))
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1002647818964"))
+FORCE_SUB_CHANNEL1 = int(os.environ.get("FORCE_SUB_CHANNEL1", "-1002278232343"))
 #put 0 to disable
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))#put 0 to disable
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002406858001"))#put 0 to disable
 FORCE_SUB_CHANNEL3 = int(os.environ.get("FORCE_SUB_CHANNEL3", "0"))#put 0 to disable
 FORCE_SUB_CHANNEL4 = int(os.environ.get("FORCE_SUB_CHANNEL4", "0"))#put 0 to disable
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-START_PIC = os.environ.get("START_PIC", "https://iili.io/3uL4CsS.md.jpg")
+START_PIC = os.environ.get("START_PIC", "https://iili.io/37b39B1.md.jpg")
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://iili.io/3uLhgVf.md.jpg")
 
 # Turn this feature on or off using True or False put value inside  ""
@@ -64,13 +64,13 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/hwdownload/3")
 
 HELP_TXT = "<b>Toi aussi tu veux un bot pareil que moi ??\n\nContact juste mon créateur : @Kingcey</b>"
 
-ABOUT_TXT = "<b><blockquote>◈ Créateur: <a href=https://t.me/botzflix>Kingcey</a>\n◈ AUTH: <a href=https://t.me/BotZFlix>ᴏᴛᴀᴋᴜғʟɪx</a>\n◈ Chaîne de Film & série : <a href=https://t.me/ZFlixTeam>ZFlix-Team</a>\n◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/Kingcey>Kingcey</a></blockquote></b>"
+ABOUT_TXT = "<b><blockquote>◈ Propio: <a href=https://t.me/Sankare87>سنكاري عبد الرشيد</a>\n◈ AUTH: <a href=https://t.me/BotZFlix>ᴏᴛᴀᴋᴜғʟɪx</a>\n◈ Canal Anime: <a href=https://t.me/Otaku_Haven_hebdo>Otaku Haven</a>\n◈ Propio : <a href=https://t.me/Sankare87>سنكاري عبد الرشيد</a></blockquote></b>"
 
 
-START_MSG = os.environ.get("START_MESSAGE", "<b>Yo {first}\n\n 𝚃'𝚊𝚍𝚘𝚛𝚎 𝚕𝚎𝚜 𝚊𝚗𝚒𝚖𝚎𝚜 ? ! 𝙹𝚎 𝚜𝚞𝚒𝚜 𝚕à 𝚙𝚘𝚞𝚛 𝚝'𝚊𝚒𝚍𝚎𝚛 à 𝚝𝚛𝚘𝚞𝚟𝚎𝚛 𝚌𝚎 𝚚𝚞𝚎 𝚝𝚞 𝚌𝚑𝚎𝚛𝚌𝚑𝚎𝚜.\n\n𝚅é𝚛𝚒𝚏𝚒𝚎 𝚖𝚊 𝚌𝚑𝚊î𝚗𝚎 𝚌𝚒-𝚍𝚎𝚜𝚜𝚘𝚞𝚜 𝚙𝚘𝚞𝚛 𝚎𝚗 𝚜𝚊𝚟𝚘𝚒𝚛 𝚙𝚕𝚞𝚜 !👇\n\n 𝙲𝚛éé 𝚙𝚊𝚛 <a href=https://t.me/KGCanime>◡̈⃝ㅤ🇰ιηg¢єy</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Yo {first}\n\n 𝚃'𝚊𝚍𝚘𝚛𝚎 𝚕𝚎𝚜 𝚊𝚗𝚒𝚖𝚎𝚜 ? ! 𝙹𝚎 𝚜𝚞𝚒𝚜 𝚕à 𝚙𝚘𝚞𝚛 𝚝'𝚊𝚒𝚍𝚎𝚛 à 𝚝𝚛𝚘𝚞𝚟𝚎𝚛 𝚌𝚎 𝚚𝚞𝚎 𝚝𝚞 𝚌𝚑𝚎𝚛𝚌𝚑𝚎𝚜.\n\n𝚅é𝚛𝚒𝚏𝚒𝚎 𝚖𝚊 𝚌𝚑𝚊î𝚗𝚎 𝚌𝚒-𝚍𝚎𝚜𝚜𝚘𝚞𝚜 𝚙𝚘𝚞𝚛 𝚎𝚗 𝚜𝚊𝚟𝚘𝚒𝚛 𝚙𝚕𝚞𝚜 !👇\n\n Propulseé Par <a href=https://t.me/Tokyo_Streame>Tokyo Stream</b>")
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "5115691197 6273945163 7428552084 5231212075 7328629001").split()):
+    for x in (os.environ.get("ADMINS", "1682759613 7428552084 7831789273 5231212075 7328629001").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -79,7 +79,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Genjutsu {first}\n\n<b>Pour recevoir le fichier de l'animé, Tu dois d'abord rejoindre mon canal puis cliquer sur récupérer</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• {filename}\n\nBY : @KGCAnime</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• {filename}</b>")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
